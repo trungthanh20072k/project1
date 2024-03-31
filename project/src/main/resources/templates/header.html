@@ -1,0 +1,219 @@
+<header class="header header-intro-clearance header-3" th:fragment="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-left">
+                <a th:href="@{tel:0862869279}"><i class="icon-phone"></i>Call: 0862 86 9279</a>
+            </div><!-- End .header-left -->
+
+            <div class="header-right">
+
+                <ul class="top-menu">
+                    <li>
+                        <a th:href="@{#}">Links</a>
+                        <ul>
+                            <li>
+                                <div class="header-dropdown">
+                                    <a th:href="@{#}">VND</a>
+                                    <div class="header-menu">
+                                        <ul>
+                                            <li><a th:href="@{#}">Vnđ</a></li>
+                                            <li><a th:href="@{#}">Usd</a></li>
+                                        </ul>
+                                    </div><!-- End .header-menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="header-dropdown">
+                                    <a th:href="@{#}">Ngôn Ngữ</a>
+                                    <div class="header-menu">
+                                        <ul>
+                                            <li><a th:href="@{#}">Vietnamese</a></li>
+                                            <li><a th:href="@{#}">English</a></li>
+                                        </ul>
+                                    </div><!-- End .header-menu -->
+                                </div>
+                            </li>
+                            <li><a th:href="@{#signin-modal}" data-toggle="modal">Đăng nhập / Đăng kí</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- End .top-menu -->
+            </div><!-- End .header-right -->
+
+        </div><!-- End .container -->
+    </div><!-- End .header-top -->
+
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-left">
+                <button class="mobile-menu-toggler">
+                    <span class="sr-only">Toggle mobile menu</span>
+                    <i class="icon-bars"></i>
+                </button>
+                
+                <a th:href="@{index.html}" class="logo">
+                    <img th:src="@{assets/images/demos/demo-3/logo.png}" alt="Molla Logo" width="105" height="25">
+                </a>
+            </div><!-- End .header-left -->
+
+            <div class="header-center">
+                <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                    <a th:href="@{#}" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                    <form action="#" method="get">
+                        <div class="header-search-wrapper search-wrapper-wide">
+                            <label for="q" class="sr-only">Search</label>
+                            <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Tìm kiếm sản phẩm ..." required>
+                        </div><!-- End .header-search-wrapper -->
+                    </form>
+                </div><!-- End .header-search -->
+            </div>
+
+            <div class="header-right">
+                <div class="dropdown cart-dropdown">
+                    <a th:href="@{#}" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                        <div class="icon">
+                            <i class="icon-shopping-cart"></i>
+                            <span class="cart-count">2</span>
+                        </div>
+                        <p>Giỏ hàng</p>
+                    </a>
+
+                </div><!-- End .cart-dropdown -->
+            </div><!-- End .header-right -->
+        </div><!-- End .container -->
+    </div><!-- End .header-middle -->
+
+    <div class="header-bottom sticky-header">
+        <div class="container">
+            <div class="header-left">
+                <div class="dropdown category-dropdown">
+                    <a th:href="@{#}" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
+                        Danh Mục <i class="icon-angle-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <nav class="side-nav">
+                            <ul class="menu-vertical sf-arrows">
+                                <li class="item-lead"><a th:href="@{#}">Ưu đãi</a></li>
+                                <li class="item-lead"><a th:href="@{#}">Quà tặng</a></li>
+                            </ul><!-- End .menu-vertical -->
+                        </nav><!-- End .side-nav -->
+                    </div><!-- End .dropdown-menu -->
+                </div><!-- End .category-dropdown -->
+            </div><!-- End .header-left -->
+
+            <div class="header-center">
+                <nav class="main-nav">
+                    <ul class="menu sf-arrows">
+                        <li class="megamenu-container active">
+                            <a th:href="@{index.html}" class="sf-with-ul">Home</a>
+                        </li>
+                        <li>
+                            <a th:href="@{category.html}" class="sf-with-ul">Shop</a>
+
+                            <div class="megamenu megamenu-md">
+                                <div class="row no-gutters">
+                                    <div class="col-md-8">
+                                        <div class="menu-col">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="menu-title">Phone</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a th:href="@{category-list.html}">Iphone</a></li>
+                                                        <li><a th:href="@{category-2cols.html}">SamSung</a></li>
+                                                        <li><a th:href="@{category.html}">Oppo</a></li>
+                                                        <li><a th:href="@{category-4cols.html}">Xiaomi</a></li>
+                                                    </ul>
+
+                                                    <div class="menu-title">Phone Accessories</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a th:href="@{category-boxed.html}"><span>Backup Charger<span class="tip tip-hot">Hot</span></span></a></li>
+                                                        <li><a th:href="@{category-fullwidth.html}">Phone Case</a></li>
+                                                    </ul>
+                                                </div><!-- End .col-md-6 -->
+
+                                                <div class="col-md-6">
+                                                    <div class="menu-title">Laptop</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a th:href="@{product-category-boxed.html}">HP</a></li>
+                                                        <li><a th:href="@{product-category-fullwidth.html}"><span>Dell<span class="tip tip-new">New</span></span></a></li>
+                                                        <li><a th:href="@{product-category-boxed.html}">MacBook</a></li>
+                                                        <li><a th:href="@{product-category-boxed.html}">Lenovo</a></li>
+                                                    </ul>
+                                                    <div class="menu-title">Laptop Accessories</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a th:href="@{cart.html}">Laptop Bag</a></li>
+                                                        <li><a th:href="@{checkout.html}">Laptop Charging Cable</a></li>
+                                                        <li><a th:href="@{wishlist.html}">Mouse</a></li>
+                                                        <li><a th:href="@{dashboard.html}">Key Board</a></li>
+                                                    </ul>
+                                                </div><!-- End .col-md-6 -->
+                                            </div><!-- End .row -->
+                                        </div><!-- End .menu-col -->
+                                    </div><!-- End .col-md-8 -->
+
+                                    <div class="col-md-4">
+                                        <div class="banner banner-overlay">
+                                            <a th:href="@{category.html}" class="banner banner-menu">
+                                                <img th:src="@{assets/images/menu/banner-1.jpg}" alt="Banner">
+
+                                                <div class="banner-content banner-content-top">
+                                                    <div class="banner-title text-white">Last <br>Chance<br><span><strong>Sale</strong></span></div><!-- End .banner-title -->
+                                                </div><!-- End .banner-content -->
+                                            </a>
+                                        </div><!-- End .banner banner-overlay -->
+                                    </div><!-- End .col-md-4 -->
+                                </div><!-- End .row -->
+                            </div><!-- End .megamenu megamenu-md -->
+                        </li>
+                        <li>
+                            <a th:href="@{product.html}" class="sf-with-ul">Product</a>
+
+                            <div class="megamenu megamenu-sm">
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="menu-col">
+                                            <div class="menu-title">Product Details</div><!-- End .menu-title -->
+                                            <ul>
+                                                <li><a th:href="@{product.html}">Default</a></li>
+                                                <li><a th:href="@{product-centered.html}">Centered</a></li>
+                                                <li><a th:href="@{product-extended.html}"><span>Extended Info<span class="tip tip-new">New</span></span></a></li>
+                                                <li><a th:href="@{product-gallery.html}">Gallery</a></li>
+                                                <li><a th:href="@{product-sticky.html}">Sticky Info</a></li>
+                                                <li><a th:href="@{product-sidebar.html}">Boxed With Sidebar</a></li>
+                                                <li><a th:href="@{product-fullwidth.html}">Full Width</a></li>
+                                                <li><a th:href="@{product-masonry.html}">Masonry Sticky Info</a></li>
+                                            </ul>
+                                        </div><!-- End .menu-col -->
+                                    </div><!-- End .col-md-6 -->
+
+                                    <div class="col-md-6">
+                                        <div class="banner banner-overlay">
+                                            <a th:href="@{category.html}">
+                                                <img th:src="@{assets/images/menu/banner-2.jpg}" alt="Banner">
+
+                                                <div class="banner-content banner-content-bottom">
+                                                    <div class="banner-title text-white">New Trends<br><span><strong>spring 2019</strong></span></div><!-- End .banner-title -->
+                                                </div><!-- End .banner-content -->
+                                            </a>
+                                        </div><!-- End .banner -->
+                                    </div><!-- End .col-md-6 -->
+                                </div><!-- End .row -->
+                            </div><!-- End .megamenu megamenu-sm -->
+                        </li>
+                        <li>
+                            <a th:href="@{#}" class="sf-with-ul">Pages</a>
+                        </li>
+                        <li>
+                            <a th:href="@{blog.html}" class="sf-with-ul">Blog</a>
+                        </li>
+                    </ul><!-- End .menu -->
+                </nav><!-- End .main-nav -->
+            </div><!-- End .header-center -->
+
+            <div class="header-right">
+                <i class="la la-lightbulb-o"></i><p>Clearance<span class="highlight">&nbsp;Up to 30% Off</span></p>
+            </div>
+        </div><!-- End .container -->
+    </div><!-- End .header-bottom -->
+</header><!-- End .header -->
